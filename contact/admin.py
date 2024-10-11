@@ -9,3 +9,8 @@ class ContactAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_date'
     ordering = ('-created_date',)
     list_per_page = 10
+
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    
