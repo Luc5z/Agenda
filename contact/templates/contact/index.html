@@ -21,7 +21,7 @@
                 {% for contact in contacts %}
                     <tr class="table-row">
                         <td class="table-cel">
-                            <a class="table-link" href="#" >
+                            <a class="table-link" href="{% url 'contact:contact_detail' pk=contact.pk %}">
                                 {{contact.id}}
                             </a>
                         </td>
